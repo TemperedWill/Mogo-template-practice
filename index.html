@@ -20,18 +20,17 @@
       class="background-block"
       style="background-image: url('/media/head_eagle.png'); height: 1000px"
     >
-      <div class="main-block flex-vertical jf-evenly wrap" id="hat">
-        <nav
-          class="flex-container jf-spc-between wrap"
-          style="margin-top: 40px"
-        >
-          <div class="thick-text" id="nav-logo" style="font-size: 28px">
-            MoGo
-          </div>
+      <div
+        class="main-block flex-vertical jf-spc-between wrap"
+        id="hat"
+        style="height: 1000px"
+      >
+        <nav class="flex-container jf-spc-between wrap" id="hat-nav">
+          <div class="thick-text" id="nav-logo">MoGo</div>
           <!-- ADD BURGER MENU HERE ON MOBILE -->
           <div
             class="flex-container jf-evenly wrap al-items-center"
-            id="hat-nav"
+            id="hat-nav-items"
           >
             <a>ABOUT</a>
             <a>SERVICE</a>
@@ -42,11 +41,22 @@
             <a><img src="/media/search_logo.png" /></a>
           </div>
         </nav>
-        <header class="flex-vertical">
-          <h2>Creative Template</h2>
-          <h1>WELCOME TO MOGO</h1>
-          <div class="underscore-short"></div>
-          <button>LEARN MORE</button>
+        <header
+          class="flex-vertical al-items-center jf-spc-between"
+          id="hat-main"
+        >
+          <h2 class="italic">Creative Template</h2>
+          <h1 class="text-center" id="welcome-head">
+            WELCOME <br />
+            TO MOGO
+          </h1>
+          <div id="upperscore-header"></div>
+          <button
+            class="trsp-button border-white text-white"
+            id="header-button"
+          >
+            LEARN MORE
+          </button>
         </header>
         <div class="flex-container" id="head_horisontal_scroll">
           <div class="slider-container">
