@@ -1,5 +1,9 @@
+@global-font-size: 15px;
+
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 500;
+  font-size: @global-font-size;
 }
 
 @main-body-width: 1200px;
@@ -14,12 +18,24 @@ h2 {
   height: @hat-height;
 }
 
+.logo-link {
+  height: @global-font-size;
+  width: @global-font-size;
+}
+
+#hat img {
+  height: @global-font-size;
+  width: @global-font-size;
+}
+
 #hat-background {
   height: @hat-height;
 }
 
 header > h1 {
   font-size: 112px;
+  font-weight: 800;
+  font-family: "Montserrat";
   @media (max-width: 900px) {
     font-size: 90px;
   }
@@ -120,9 +136,11 @@ body {
 }
 
 #upperscore-header {
-  height: 0px;
+  height: 3px;
   width: 60px;
-  border-bottom: solid white 2px;
+  background-color: white;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #head_horisontal_scroll {
@@ -194,8 +212,8 @@ body {
 
 .slider-container {
   height: 60px;
-  width: 20%;
-  max-width: 250px;
+  width: 22%;
+  max-width: 280px;
 }
 
 .slider {
