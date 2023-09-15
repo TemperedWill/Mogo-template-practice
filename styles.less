@@ -9,20 +9,53 @@ h2 {
   margin: 0px;
 }
 
+#hat {
+  height: 1000px;
+}
+
 header > h1 {
   font-size: 112px;
+  @media (max-width: 900px) {
+    font-size: 90px;
+  }
 
-  @media (max-width: 400px) {
+  @media (max-width: 700px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 500px) {
     font-size: 56px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 48px;
   }
 }
 
 header > h2 {
   font-size: 56px;
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
   /* Resize giant fonts to fit mobile screen */
-  @media (max-width: 400px) {
+  @media (max-width: 900px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 500px) {
     font-size: 28px;
   }
+}
+
+body {
+  margin: 0;
 }
 
 .flex-container {
@@ -123,6 +156,21 @@ header > h2 {
 
 #hat-main {
   min-height: 450px;
+  @media (max-width: 900px) {
+    min-height: 360px;
+  }
+
+  @media (max-width: 700px) {
+    min-height: 320px;
+  }
+
+  @media (max-width: 500px) {
+    min-height: 270px;
+  }
+
+  @media (max-width: 350px) {
+    min-height: 230px;
+  }
 }
 
 #welcome-head {
@@ -143,4 +191,24 @@ header > h2 {
 
 .text-white {
   color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #584848;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9b7b7b;
 }
