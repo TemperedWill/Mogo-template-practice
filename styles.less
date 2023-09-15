@@ -3,6 +3,7 @@
 }
 
 @main-body-width: 1200px;
+@hat-height: 970px;
 
 h1,
 h2 {
@@ -10,7 +11,11 @@ h2 {
 }
 
 #hat {
-  height: 1000px;
+  height: @hat-height;
+}
+
+#hat-background {
+  height: @hat-height;
 }
 
 header > h1 {
@@ -126,7 +131,7 @@ body {
 }
 
 #hat-nav {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #hat-nav-items {
@@ -173,14 +178,46 @@ body {
   }
 }
 
+.slider-number {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
 #welcome-head {
   line-height: 90%;
 }
 
-.slider-container {
-  height: 60px;
+.slider-text-container {
+  padding: 20px 0;
 }
 
+.slider-container {
+  height: 60px;
+  width: 20%;
+  max-width: 250px;
+}
+
+.slider {
+  height: 3px;
+  background-color: white;
+}
+
+.slider-fill {
+  background-color: #f38181;
+  width: 0%;
+  height: 3px;
+}
+
+// Use width to controll width of the progress bar
+#slider-fill-1 {
+  width: 40%;
+}
+
+.slider-number {
+  font-weight: bold;
+  font-size: 18px;
+}
 .trsp-button {
   background-color: transparent;
 }
