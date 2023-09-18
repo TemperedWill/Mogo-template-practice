@@ -53,6 +53,59 @@ header > h1 {
   }
 }
 
+.kaushan {
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
+}
+
+.roboto {
+  font-family: "Roboto";
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+.fs-23 {
+  font-size: 23px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+
 header > h2 {
   font-size: 56px;
   font-weight: 400;
@@ -116,6 +169,14 @@ body {
   margin: 0 auto;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
+.picture-container > figure {
+  margin: 0;
+}
+
 .background-block {
   background-position: center;
 }
@@ -123,8 +184,8 @@ body {
 .main-block {
   margin: 0 auto;
   max-width: @main-body-width;
-  width: 60%;
-  min-width: 250px;
+  width: 80%;
+  min-width: 280px;
 }
 
 .thick-text {
@@ -135,17 +196,32 @@ body {
   font-style: italic;
 }
 
-#upperscore-header {
+.underscore-header {
   height: 3px;
   width: 60px;
-  background-color: white;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-pink {
+  background-color: #f38181;
+}
+
+text-grey {
+  color: #999999;
+}
+
 #head_horisontal_scroll {
   display: flex;
-  justify-content: space-around;
+  //justify-content: space-around;
 }
 
 #hat-nav {
@@ -266,4 +342,40 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #9b7b7b;
+}
+
+#about-us-block {
+  padding-top: 70px;
+  padding-bottom: 110px;
+  min-height: 550px;
+  background-color: #ffffff;
+}
+
+#about-us-block {
+  gap: 80px;
+}
+
+#about-us-description {
+  width: 79%;
+}
+
+.picture-container > figure {
+  @media (max-width: 1450px) {
+    width: 33%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.picture-container {
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    gap: 10px;
+
+    figure {
+      width: auto;
+    }
+  }
 }
