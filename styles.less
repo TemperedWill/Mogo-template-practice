@@ -10,9 +10,22 @@
 @main-body-width: 1200px;
 @hat-height: 970px;
 
+// Отключаем padding и margin у заглавий и p по умолчанию,
+// так с ними проще работать
+
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
 #hat {
@@ -196,6 +209,14 @@ body {
 
 .margin-0 {
   margin: 0;
+}
+
+.margin-8 {
+  margin: 8px;
+}
+
+.underheader {
+  margin: 8px;
 }
 
 .picture-container > figure {
@@ -423,6 +444,10 @@ text-grey {
   margin: 0;
 }
 
+#we-work-with-block {
+  min-height: 650px;
+}
+
 .full-height {
   height: 100%;
 }
@@ -446,4 +471,45 @@ text-grey {
 
 .numbered-article {
   margin-left: -2px;
+}
+
+.services-article {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  height: 32px;
+  width: auto;
+}
+
+.three-columns-grid {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.services-article {
+  max-width: 400px;
+}
+
+.services-article-header {
+  text-align: start;
+  margin-bottom: 5px;
+  margin-top: -5px;
+}
+
+.services-article {
+  padding: 5px;
+  margin: 40px 0;
+}
+.services-article-text {
+  text-align: left;
+}
+
+.text-wrapper {
+  margin-left: 25px;
+}
+
+#first-group {
+  border-bottom: 1px solid #e5e5e5;
 }
