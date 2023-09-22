@@ -62,8 +62,12 @@ header > h1 {
     font-size: 56px;
   }
 
-  @media (max-width: 350px) {
+  @media (max-width: 380px) {
     font-size: 48px;
+  }
+
+  @media (max-width: 330px) {
+    font-size: 45px;
   }
 }
 
@@ -317,7 +321,7 @@ text-grey {
     min-height: 270px;
   }
 
-  @media (max-width: 350px) {
+  @media (max-width: 365px) {
     min-height: 230px;
   }
 }
@@ -362,6 +366,19 @@ text-grey {
   font-weight: bold;
   font-size: 18px;
 }
+
+.slider-text {
+  @media (max-width: 330px) {
+    font-size: 14px;
+  }
+}
+
+#head_horisontal_scroll > .slider-container {
+  @media (max-width: 330px) {
+    display: none;
+  }
+}
+
 .trsp-button {
   background-color: transparent;
 }
@@ -432,6 +449,10 @@ text-grey {
 
 #numbers-block {
   min-height: 270px;
+
+  @media (max-width: 500px) {
+    min-height: 180px;
+  }
 }
 
 #numbers-article {
@@ -478,6 +499,12 @@ text-grey {
   flex-direction: row;
 }
 
+#we-work-with-title-block {
+  @media (max-width: 900px) {
+    margin-top: 60px;
+  }
+}
+
 .icon {
   height: 32px;
   width: auto;
@@ -486,6 +513,30 @@ text-grey {
 .three-columns-grid {
   display: grid;
   grid-template-columns: 400px 400px 400px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 300px 300px 300px;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 400px 400px;
+  }
+
+  @media (max-width: 850px) {
+    grid-template-columns: 300px 300px;
+  }
+
+  @media (max-width: 620px) {
+    grid-template-columns: 400px;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 300px;
+  }
+
+  @media (max-width: 300px) {
+    grid-template-columns: 260px;
+  }
 }
 
 .services-article {
@@ -512,4 +563,58 @@ text-grey {
 
 #first-group {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.numbers-header {
+  font-size: 80px;
+  font-weight: 700;
+  color: white;
+
+  @media (max-width: 1200px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 30px;
+  }
+}
+
+.numbers-text {
+  @media (max-width: 1200px) {
+    font-size: 17px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 10px;
+  }
+}
+
+.numbered-article > .numbers-text {
+  @media (max-width: 950px) {
+    height: 30px;
+  }
 }
