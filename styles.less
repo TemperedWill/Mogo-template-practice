@@ -273,6 +273,10 @@ body {
   background-color: #95e1d3;
 }
 
+.bg-light-green {
+  background-color: #f8f8f8;
+}
+
 text-grey {
   color: #999999;
 }
@@ -643,7 +647,7 @@ text-grey {
 
   display: flex;
 
-  @media (max-width: 700px) {
+  @media (max-width: 540px) {
     flex-direction: column-reverse;
     align-items: center;
     max-height: 700px;
@@ -665,13 +669,21 @@ text-grey {
   min-width: 195px;
   height: auto;
 
-  @media (max-width: 700px) {
+  @media (max-width: 540px) {
     margin: 0;
   }
 }
 
 #what-we-do {
-  min-height: 850px;
+  min-height: 900px;
+}
+
+#quotes-block {
+  min-height: 290px;
+}
+
+#meet-our-team-block {
+  min-height: 1050px;
 }
 
 #unique-design-hat {
@@ -679,7 +691,43 @@ text-grey {
   padding-bottom: 0px;
 
   @media (max-width: 700px) {
+  }
+
+  @media (max-width: 540px) {
     padding: 0;
     padding-top: 20px;
   }
+}
+
+#our-partners-block {
+  min-height: 250px;
+}
+
+#some-of-our-work-block {
+  min-height: 1190px;
+}
+
+#big-quote-block {
+  min-height: 440px;
+}
+
+#what-people-say-block {
+  min-height: 830px;
+}
+
+#latest-blog-block {
+  min-height: 770px;
+}
+
+#open-map-block {
+  min-height: 200px;
+}
+
+#bottom-block {
+  min-height: 500px;
+}
+
+#footer-block {
+  min-height: 80px;
+  border-top: #e5e5e5 2px solid;
 }
