@@ -707,6 +707,7 @@ text-grey {
 
 #quotes-block {
   min-height: 290px;
+  padding: 20px;
 }
 
 #meet-our-team-block {
@@ -876,6 +877,8 @@ img.arrow-down {
   color: grey;
   font-style: italic;
   font-size: 18px;
+  line-height: 0.75cm;
+  padding-bottom: 15px;
 }
 
 @media (max-width: 700px) {
@@ -897,4 +900,53 @@ img.arrow-down {
     gap: 30px;
     padding: 0 10px;
   }
+}
+
+#meet-our-team-block {
+  padding-top: 90px;
+}
+
+.photos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (max-width: 1500px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+#third-photo {
+  @media (min-width: 1000px) and (max-width: 1500px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+  }
+}
+
+#meet-our-team-photo-container {
+  margin-top: 95px;
+}
+
+.photo-frame {
+  max-height: 545px;
+}
+
+.photo-subtitle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.photo-subtitle > .undertext {
+  margin-top: 13px;
+  font-weight: 100;
+  color: grey;
+  font-style: italic;
+}
+
+#meet-our-team-photo-container img {
+  max-height: 470px;
 }
