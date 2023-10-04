@@ -1053,3 +1053,62 @@ img.arrow-down {
   padding-top: 110px;
   padding-bottom: 105px;
 }
+
+.text-block#happy-clients {
+  padding-top: 110px;
+  padding-bottom: 75px;
+}
+
+.grid-reviews-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 60px;
+  column-gap: 75px;
+  padding-bottom: 80px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+#client-reviews {
+  min-height: 425px;
+}
+
+.client-review {
+  display: flex;
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
+}
+
+.client-review .right-part {
+  margin-top: 10px;
+}
+
+.review-underscore {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.reviewer-job-title {
+  font-style: italic;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65px;
+  margin-bottom: 20px;
+}
+
+.client-review .right-part {
+  margin-left: 25px;
+  flex-grow: 1;
+  text-align: start;
+}
+
+.client-review-text {
+  font-weight: 100;
+}
