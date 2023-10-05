@@ -18,7 +18,10 @@
   <body>
     <div
       class="background-block"
-      style="background-image: url('./media/head_eagle.png')"
+      style="
+        background-image: url('./media/head_eagle.png');
+        background-position: center;
+      "
       id="hat-background"
     >
       <div class="main-block flex-vertical jf-spc-between wrap" id="hat">
@@ -258,7 +261,10 @@
     <div
       id="unique-design-block"
       class="bg-white flex-container al-items-stretch"
-      style="background-image: url('./media/unique-design-background.png')"
+      style="
+        background-image: url('./media/unique-design-background.png');
+        background-position: center;
+      "
     >
       <article class="main-block flex-vertical jf-spc-between text-center">
         <div
@@ -290,7 +296,10 @@
         </div>
       </article>
     </div>
-    <div id="what-we-do" class="bg-white flex-vertical jf-center text-center">
+    <section
+      id="what-we-do"
+      class="bg-white flex-vertical jf-center text-center"
+    >
       <div class="main-block">
         <div class="text-block">
           <div class="title-block">
@@ -327,14 +336,29 @@
                   alt=""
                 />
                 <h3 class="slide-header-text">PHOTOGRAPHY</h3>
+                <img
+                  class="slide-arrow arrow-up"
+                  src="./media/arrow-up.png"
+                  alt=""
+                />
               </div>
               <div class="slide-text-inside-block">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                autem asperiores aspernatur rerum adipisci officiis molestiae
-                distinctio eveniet mollitia, nobis voluptate excepturi modi?
-                Ullam nemo, nesciunt, molestias deserunt mollitia accusamus fuga
-                corporis illum, reprehenderit error beatae sed adipisci cumque
-                commodi velit.
+                <div class="text-wrapper-inside-block">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    autem asperiores aspernatur rerum adipisci officiis
+                    molestiae distinctio eveniet mollitia, nobis voluptate
+                    excepturi modi? Ullam nemo, nesciunt, molestias deserunt
+                    mollitia accusamus fuga corporis illum, reprehenderit error
+                    beatae sed adipisci.. corporis illum, reprehenderit error
+                    beatae sed adipisci..
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Cum, animi. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Cum, animi.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="slide-text-block">
@@ -349,11 +373,13 @@
                   alt=""
                 />
                 <h3 class="slide-header-text">CREATIVITY</h3>
+                <img
+                  class="slide-arrow arrow-down"
+                  src="./media/arrow-up.png"
+                  alt=""
+                />
               </div>
-              <div
-                class="slide-text-inside-block display-none"
-                style="display: none"
-              >
+              <div class="slide-text-inside-block" style="display: none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
                 autem asperiores aspernatur rerum adipisci officiis molestiae
                 distinctio eveniet mollitia, nobis voluptate excepturi modi?
@@ -374,62 +400,496 @@
                   alt=""
                 />
                 <h3 class="slide-header-text">WEB DESIGN</h3>
+                <img
+                  class="slide-arrow arrow-down"
+                  src="./media/arrow-up.png"
+                  alt=""
+                />
               </div>
               <div class="slide-text-inside-block" style="display: none">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                autem asperiores aspernatur rerum adipisci officiis molestiae
-                distinctio eveniet mollitia, nobis voluptate excepturi modi?
-                Ullam nemo, nesciunt, molestias deserunt mollitia accusamus fuga
-                corporis illum, reprehenderit error beatae sed adipisci cumque
-                commodi velit.
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                  autem asperiores aspernatur rerum adipisci officiis molestiae
+                  distinctio eveniet mollitia, nobis voluptate excepturi modi?
+                  Ullam nemo, nesciunt, molestias deserunt mollitia accusamus
+                  fuga corporis illum, reprehenderit error beatae sed adipisci
+                  cumque commodi velit.
+                </p>
+                <p>
+                  Fuga corporis illum, reprehenderit error beatae sed adipisci
+                  cumque commodi velit.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
+    </section>
+    <section
       id="quotes-block"
       class="bg-light-green flex-vertical jf-center text-center"
-    ></div>
-    <div
+    >
+      <div
+        class="main-block flex-container al-items-center quotes-container"
+        id="quotes-container-1"
+      >
+        <div class="left-arrow quote-arrow">
+          <img src="./media/arrow-left.png" alt="" />
+        </div>
+        <div class="quote-block">
+          <img
+            id="speech-bubbles-pic"
+            src="./media/speech-bubbles-icon.png"
+            alt=""
+            class="quote-image"
+          />
+          <div class="quote-main-block">
+            <p class="quote-text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              asperiores quisquam assumenda consequuntur minus eligendi? Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+              velit?"
+            </p>
+            <p class="quote-author">
+              <span
+                class="underscore-line bg-pink inline-block text-center"
+              ></span>
+              John Doe
+            </p>
+          </div>
+        </div>
+        <div class="right-arrow quote-arrow">
+          <img src="./media/arrow-right.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section
       id="meet-our-team-block"
-      class="bg-white flex-vertical jf-center text-center"
-    ></div>
-    <div
+      class="bg-white flex-vertical jf-start text-center"
+    >
+      <div class="main-block">
+        <div class="text-block">
+          <div class="title-block">
+            <p class="underheader kaushan fs-22">Who we are</p>
+            <h3 class="fs-26 fw-700">MEET OUR TEAM</h3>
+            <div class="underscore-header bg-pink margin-auto"></div>
+          </div>
+          <p class="fw-100 text-grey">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+            iure impedit hic et cum quod minus incidunt soluta libero
+            accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aspernatur, quos.
+          </p>
+        </div>
+        <div class="photos-container" id="meet-our-team-photo-container">
+          <div class="photo-container">
+            <img src="./media/photographer-1.png" alt="" />
+            <div class="photo-subtitle">
+              <p>MATTHEW DIX</p>
+              <p class="undertext">Graphic Design</p>
+            </div>
+          </div>
+          <div class="photo-container">
+            <img src="./media/photographer-2.png" alt="" />
+            <div class="photo-subtitle">
+              <p>CHRISTOPHER CAMPBELL</p>
+              <p class="undertext">Branding/UX design</p>
+            </div>
+          </div>
+          <div id="third-photo" class="photo-container">
+            <img src="./media/photographer-3.png" alt="" />
+            <div class="photo-subtitle">
+              <p>MICHAEL FERTIG</p>
+              <p class="undertext">Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
       id="our-partners-block"
       class="bg-light-green flex-vertical jf-center text-center"
-    ></div>
-    <div
+    >
+      <div class="main-block">
+        <div class="icon-grid">
+          <img
+            src="./media/partner_1.png"
+            alt="Hipster Barbershop Logo"
+            class="partner_icon"
+          />
+          <img
+            src="./media/partner_2.png"
+            alt="A B C D Logo"
+            class="partner_icon"
+          />
+          <img
+            src="./media/partner_3.png"
+            alt="Design Quality Logo"
+            class="partner_icon"
+          />
+          <img
+            src="./media/partner_4.png"
+            alt="Hipster Barbershop Logo"
+            class="partner_icon"
+          />
+          <img
+            src="./media/partner_5.png"
+            alt="Hipster Barbershop Logo"
+            class="partner_icon"
+          />
+          <img
+            src="./media/partner_6.png"
+            alt="Studio Designer Logo"
+            class="partner_icon"
+          />
+        </div>
+      </div>
+    </section>
+    <section
       id="some-of-our-work-block"
-      class="bg-white flex-vertical jf-center text-center"
-    ></div>
+      class="bg-white flex-vertical jf-spc-between text-center"
+    >
+      <div class="main-block">
+        <div class="text-block" id="our-work">
+          <div class="title-block">
+            <p class="underheader kaushan fs-22">What we do</p>
+            <h3 class="fs-26 fw-700">SOME OF OUR WORK</h3>
+            <div class="underscore-header bg-pink margin-auto"></div>
+          </div>
+          <p class="fw-100 text-grey">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+            iure impedit hic et cum quod minus incidunt soluta libero
+            accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aspernatur, quos.
+          </p>
+        </div>
+      </div>
+      <!-- add js horizontal scroll here -->
+      <div class="photos-wrapper">
+        <div class="photos-grid-4" id="our-work-photo-block">
+          <img src="./media/photo-1.png" alt="" class="grid-photo" />
+          <img src="./media/photo-2.png" alt="" class="grid-photo" />
+
+          <img
+            src="./media/tall-photo-3.png"
+            alt=""
+            class="grid-photo"
+            id="grid-tall-photo-3"
+          />
+          <img src="./media/photo-4.png" alt="" class="grid-photo" />
+          <img src="./media/photo-5.png" alt="" class="grid-photo" />
+          <img src="./media/photo-6.png" alt="" class="grid-photo" />
+          <img
+            src="./media/photo-8.png"
+            alt=""
+            class="grid-photo"
+            style="grid-row-start: 2; grid-row-end: 2; grid-column: 4"
+          />
+        </div>
+      </div>
+    </section>
     <div
       id="big-quote-block"
       class="bg-light-green flex-vertical jf-center text-center"
-    ></div>
+    >
+      <div
+        class="main-block flex-container al-items-center quotes-container"
+        id="quotes-container-2"
+      >
+        <div class="left-arrow quote-arrow">
+          <img src="./media/arrow-left.png" alt="" />
+        </div>
+        <div class="quote-block">
+          <img
+            id="quote-round-photo"
+            src="./media/quote-photo.png"
+            alt=""
+            class="quote-image"
+          />
+          <div class="quote-main-block">
+            <p class="quote-text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              asperiores quisquam assumenda consequuntur minus eligendi? Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+              velit?"
+            </p>
+            <p class="quote-author">
+              <span
+                class="underscore-line bg-pink inline-block text-center"
+              ></span>
+              Joshua Earle
+            </p>
+          </div>
+        </div>
+        <div class="right-arrow quote-arrow">
+          <img src="./media/arrow-right.png" alt="" />
+        </div>
+      </div>
+    </div>
     <div
       id="what-people-say-block"
-      class="bg-green flex-vertical jf-center text-center"
-    ></div>
-    <div
-      id="latest-blog-block"
-      class="bg-white flex-vertical jf-center text-center"
-    ></div>
-    <div
+      class="bg-green text-center"
+      style="
+        background-image: url('./media/what-people-say-background.png');
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="main-block">
+        <div class="text-block" id="happy-clients">
+          <div class="title-block">
+            <p class="underheader kaushan fs-22">Happy clients</p>
+            <h3 class="fs-26 fw-700">WHAT PEOPLE SAY</h3>
+            <div class="underscore-header bg-pink margin-auto"></div>
+          </div>
+        </div>
+        <div class="grid-reviews-2">
+          <div class="client-review">
+            <div class="left-part">
+              <img
+                src="./media/Matthew_photo.png"
+                alt=""
+                class="reviewer-photo"
+              />
+            </div>
+            <div class="right-part">
+              <header class="review-header">
+                <h3>MATTHEW DIX</h3>
+                <p class="reviewer-job-title">Graphic Design</p>
+                <div
+                  class="underscore-header bg-pink margin-auto review-underscore"
+                ></div>
+              </header>
+              <p class="client-review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis ullam modi iure illum amet aspernatur sunt. Amet
+                aspernatur sunt.
+              </p>
+            </div>
+          </div>
+          <div class="client-review">
+            <div class="left-part">
+              <img src="./media/Nick_photo.png" alt="" class="reviewer-photo" />
+            </div>
+            <div class="right-part">
+              <header class="review-header">
+                <h3>NICK KARVOUNIS</h3>
+                <p class="reviewer-job-title">Graphic Design</p>
+                <div
+                  class="underscore-header bg-pink margin-auto review-underscore"
+                ></div>
+              </header>
+              <p class="client-review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis ullam modi iure illum amet aspernatur sunt. Amet
+                aspernatur sunt.
+              </p>
+            </div>
+          </div>
+          <div class="client-review">
+            <div class="left-part">
+              <img
+                src="./media/Jaelynn_photo.png"
+                alt=""
+                class="reviewer-photo"
+              />
+            </div>
+            <div class="right-part">
+              <header class="review-header">
+                <h3>JAELYNN CASTILLO</h3>
+                <p class="reviewer-job-title">Graphic Design</p>
+                <div
+                  class="underscore-header bg-pink margin-auto review-underscore"
+                ></div>
+              </header>
+              <p class="client-review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis ullam modi iure illum amet aspernatur sunt. Amet
+                aspernatur sunt.
+              </p>
+            </div>
+          </div>
+          <div class="client-review">
+            <div class="left-part">
+              <img
+                src="./media/Mike_photo.jpg.png"
+                alt=""
+                class="reviewer-photo"
+              />
+            </div>
+            <div class="right-part">
+              <header class="review-header">
+                <h3>MIKE PETRUCCI</h3>
+                <p class="reviewer-job-title">Graphic Design</p>
+                <div
+                  class="underscore-header bg-pink margin-auto review-underscore"
+                ></div>
+              </header>
+              <p class="client-review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis ullam modi iure illum amet aspernatur sunt. Amet
+                aspernatur sunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="latest-blog-block" class="bg-white text-center">
+      <div class="main-block flex-vertical">
+        <div class="text-block" id="our-stories">
+          <div class="title-block">
+            <p class="underheader kaushan fs-22">Our stories</p>
+            <h3 class="fs-26 fw-700">LATEST BLOG</h3>
+            <div class="underscore-header bg-pink margin-auto"></div>
+          </div>
+        </div>
+        <div class="blog-container">
+          <article class="blog-article">
+            <header class="blog-header">
+              <div class="image-wrapper">
+                <img
+                  src="./media/blog_pic_1.png"
+                  alt=""
+                  class="blog-article-image"
+                />
+                <div class="blog-date">
+                  <p class="date-num">15</p>
+                  <p class="date-month">Jan</p>
+                </div>
+              </div>
+
+              <h3 class="blog-h3">LOREM IPSUM DOLOR SIT AMET.</h3>
+            </header>
+            <p class="blog-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              enim voluptatem aperiam.
+            </p>
+            <footer class="blog-footer">
+              <span class="post-views">
+                <img src="./media/eye_icon.png" alt="" /><span class="count"
+                  >542</span
+                ></span
+              >
+              <span class="post-comments"
+                ><img src="./media/message_icon.png" alt="" />
+                <span class="count">17</span>
+              </span>
+            </footer>
+          </article>
+          <article class="blog-article">
+            <header class="blog-header">
+              <div class="image-wrapper">
+                <img
+                  src="./media/blog_pic_2.png"
+                  alt=""
+                  class="blog-article-image"
+                />
+                <div class="blog-date">
+                  <p class="date-num">14</p>
+                  <p class="date-month">Jan</p>
+                </div>
+              </div>
+
+              <h3 class="blog-h3">LOREM IPSUM DOLOR SIT AMET.</h3>
+            </header>
+            <p class="blog-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              enim voluptatem aperiam.
+            </p>
+            <footer class="blog-footer">
+              <span class="post-views">
+                <img src="./media/eye_icon.png" alt="" /><span class="count"
+                  >992</span
+                ></span
+              >
+              <span class="post-comments"
+                ><img src="./media/message_icon.png" alt="" />
+                <span class="count">42</span>
+              </span>
+            </footer>
+          </article>
+          <article class="blog-article">
+            <header class="blog-header">
+              <div class="image-wrapper">
+                <img
+                  src="./media/blog_pic_3.png"
+                  alt=""
+                  class="blog-article-image"
+                />
+                <div class="blog-date">
+                  <p class="date-num">12</p>
+                  <p class="date-month">Jan</p>
+                </div>
+              </div>
+
+              <h3 class="blog-h3">LOREM IPSUM DOLOR SIT AMET.</h3>
+            </header>
+            <p class="blog-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              enim voluptatem aperiam.
+            </p>
+            <footer class="blog-footer">
+              <span class="post-views">
+                <img src="./media/eye_icon.png" alt="" /><span class="count"
+                  >1560</span
+                ></span
+              >
+              <span class="post-comments"
+                ><img src="./media/message_icon.png" alt="" />
+                <span class="count">98</span>
+              </span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
       id="open-map-block"
       class="bg-green flex-vertical jf-center text-center"
-    ></div>
-    <div
-      id="bottom-block"
-      class="bg-green flex-vertical jf-center text-center"
-    ></div>
+      style="
+        background-image: url('./media/map_background.png');
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="main-block">
+        <div class="text-block" id="open-map">
+          <div class="title-block">
+            <img
+              src="./media/pin_icon.png"
+              alt="pin icon"
+              id="pin_icon"
+              class=""
+              height="26px"
+              width="auto"
+            />
+            <h3 class="fs-26 fw-700 text-red">OPEN MAP</h3>
+            <div class="underscore-header bg-pink margin-auto"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-block" class="flex-vertical jf-stretch text-center">
+      <div class="bottom-container">
+        <div id="first-container"></div>
+        <div id="second-container"></div>
+        <div id="third-container"></div>
+      </div>
+    </section>
   </body>
   <footer>
-    <div id="footer-block" class="bg-white flex-vertical jf-center text-center">
-      <div class="main-block">
+    <div
+      id="footer-block"
+      class="bg-white text-center flex-container al-items-stretch"
+    >
+      <div class="main-block flex-vertical jf-center" id="footer-div">
         <p>MoGo free template made by Laaqiq</p>
-        <p>Markup by Stanislav Kokunin (TemperedWill)</p>
+        <p>
+          Markup by Stanislav Kokunin (<a href="https://github.com/TemperedWill"
+            >TemperedWill</a
+          >)
+        </p>
       </div>
     </div>
   </footer>
