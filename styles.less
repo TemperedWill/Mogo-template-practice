@@ -1291,6 +1291,9 @@ img.arrow-down {
 
 .micro-blog {
   text-align: start;
+  @media (max-width: 300px) {
+    padding: 0 10px;
+  }
 }
 
 .micro-blog .right-part {
@@ -1364,11 +1367,13 @@ img.arrow-down {
 
 .email-sub {
   height: 40px;
-  width: 380px;
+  max-width: 380px;
+  width: auto;
 }
 
 .email-sub button {
-  width: 150px;
+  max-width: 150px;
+  width: auto;
   height: 40px;
   background-color: #95e1d3;
   border: none;
@@ -1386,15 +1391,9 @@ img.arrow-down {
 }
 
 .email-sub input {
-  width: auto;
+  width: 50%;
   height: 40px;
   border: 1px solid #e7e7e7;
-}
-
-.follow-us-block .icon-container {
-  min-width: 220px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .instagram-block {
@@ -1458,6 +1457,20 @@ img.arrow-down {
   }
 }
 
+.bottom-container * {
+  @media (max-width: 300px) {
+    align-content: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+.follow-us-block {
+  @media (max-width: 300px) {
+    margin-bottom: 25px;
+  }
+}
+
 .bottom-container > div {
   margin-bottom: 40px;
 }
@@ -1470,4 +1483,14 @@ img.arrow-down {
 #small-instagramm-block .grid-3 {
   row-gap: 2px;
   column-gap: 2px;
+}
+
+.follow-us-block .icon-container {
+  min-width: 220px;
+  display: flex;
+  justify-content: space-between !important;
+
+  @media (max-width: 350px) {
+    min-width: 150px;
+  }
 }
