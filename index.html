@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html amp lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Awesome website</title>
-    <link rel="preconnect" href="https://cdn.ampproject.org" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
-    <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+    <link rel="canonical" href="index.html" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
     <style amp-custom>
       * {
         font-family: "Montserrat", sans-serif;
@@ -42,7 +99,7 @@
         width: 15px;
       }
 
-      #hat img {
+      #hat amp-img {
         height: 15px;
         width: 15px;
       }
@@ -510,7 +567,7 @@
           width: 33%;
         }
 
-        .picture-container > figure img {
+        .picture-container > figure amp-img {
           width: 100%;
         }
       }
@@ -841,7 +898,7 @@
         align-items: start;
       }
 
-      img.info-block-side-image {
+      amp-img.info-block-side-image {
         max-width: 800px;
         max-height: 460px;
         display: block;
@@ -939,7 +996,7 @@
         margin-right: 9px;
       }
 
-      img.arrow-down {
+      amp-img.arrow-down {
         transform: rotate(180deg);
       }
 
@@ -957,7 +1014,7 @@
           flex-direction: column;
         }
 
-        img.info-block-side-image {
+        amp-img.info-block-side-image {
           width: 100%;
         }
 
@@ -995,14 +1052,14 @@
       }
 
       @media (max-width: 500px) {
-        .photos-container > .photo-container > img {
+        .photos-container > .photo-container > amp-img {
           width: 300px;
           height: auto;
         }
       }
 
       @media (max-width: 380px) {
-        .photos-container > .photo-container > img {
+        .photos-container > .photo-container > amp-img {
           width: 250px;
           height: auto;
         }
@@ -1074,7 +1131,7 @@
         font-style: italic;
       }
 
-      #meet-our-team-photo-container img {
+      #meet-our-team-photo-container amp-img {
         max-height: 470px;
       }
 
@@ -1258,7 +1315,7 @@
           width: 280px;
         }
 
-        .blog-article img {
+        .blog-article amp-img {
           max-width: 280px;
         }
       }
@@ -1269,7 +1326,7 @@
           width: 240px;
         }
 
-        .blog-article img {
+        .blog-article amp-img {
           max-width: 240px;
         }
       }
@@ -1480,7 +1537,7 @@
           flex-direction: column;
         }
 
-        img.info-block-side-image {
+        amp-img.info-block-side-image {
           width: 100%;
         }
       }
@@ -1503,7 +1560,7 @@
         display: flex;
       }
 
-      .micro-block img {
+      .micro-block amp-img {
         align-self: flex-end;
       }
 
@@ -1563,7 +1620,7 @@
       }
     </style>
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <link rel="canonical" href="https://mogo-template-practice.vercel.app/" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
@@ -1574,65 +1631,6 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <style amp-boilerplate="">
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      }
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-    </style>
-    <noscript
-      ><style amp-boilerplate="">
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none;
-        }
-      </style></noscript
-    >
   </head>
   <body>
     <div
@@ -1657,11 +1655,21 @@
             <a>BLOG</a>
             <a>CONTACT</a>
             <a class="logo-link"
-              ><img src="./media/cart_logo.png" alt="cart logo"
-            /></a>
+              ><amp-img
+                width="16"
+                height="16"
+                src="./media/cart_logo.png"
+                alt="cart logo"
+              ></amp-img
+            ></a>
             <a class="logo-link"
-              ><img src="./media/search_logo.png" alt="search logo"
-            /></a>
+              ><amp-img
+                width="16"
+                height="16"
+                src="./media/search_logo.png"
+                alt="search logo"
+              ></amp-img
+            ></a>
           </div>
         </nav>
         <header
@@ -1746,16 +1754,28 @@
           class="picture-container flex-container jf-spc-between wrap al-items-center"
         >
           <figure>
-            <img
+            <amp-img
+              width="256"
+              height="196"
               src="./media/block-pic-1-super-team-min.png"
               alt="SUPER TEAM"
-            />
+            ></amp-img>
           </figure>
           <figure>
-            <img src="./media/block-pic-2-min.png" alt="SUPER TEAM" />
+            <amp-img
+              width="256"
+              height="196"
+              src="./media/block-pic-2-min.png"
+              alt="SUPER TEAM"
+            ></amp-img>
           </figure>
           <figure>
-            <img src="./media/block-pic-3-min.png" alt="SUPER TEAM" />
+            <amp-img
+              width="256"
+              height="196"
+              src="./media/block-pic-3-min.png"
+              alt="SUPER TEAM"
+            ></amp-img>
           </figure>
         </div>
       </article>
@@ -1815,7 +1835,13 @@
         <div id="services-grid" class="">
           <div id="first-group" class="three-columns-grid">
             <article class="services-article">
-              <img class="icon" src="./media/alarm_icon.png" alt="alarm icon" />
+              <amp-img
+                class="icon"
+                width="48"
+                height="32"
+                src="./media/alarm_icon.png"
+                alt="alarm icon"
+              ></amp-img>
               <div class="text-wrapper">
                 <h3 class="services-article-header">PHOTOGRAPHY</h3>
                 <p class="services-article-text">
@@ -1825,11 +1851,13 @@
               </div>
             </article>
             <article class="services-article">
-              <img
+              <amp-img
                 class="icon"
+                width="48"
+                height="32"
                 src="./media/line-graph_icon.png"
                 alt="line graph icon"
-              />
+              ></amp-img>
               <div class="text-wrapper">
                 <h3 class="services-article-header">WEB DESIGN</h3>
                 <p class="services-article-text">
@@ -1839,11 +1867,13 @@
               </div>
             </article>
             <article class="services-article">
-              <img
+              <amp-img
                 class="icon"
+                width="48"
+                height="32"
                 src="./media/computer_icon.png"
                 alt="computer icon"
-              />
+              ></amp-img>
               <div class="text-wrapper">
                 <h3 class="services-article-header">CREATIVITY</h3>
                 <p class="services-article-text">
@@ -1856,7 +1886,13 @@
 
           <div id="second-group" class="three-columns-grid">
             <article class="services-article">
-              <img class="icon" src="./media/book_icon.png" alt="book icon" />
+              <amp-img
+                class="icon"
+                width="48"
+                height="32"
+                src="./media/book_icon.png"
+                alt="book icon"
+              ></amp-img>
               <div class="text-wrapper">
                 <h3 class="services-article-header">SEO</h3>
                 <p class="services-article-text">
@@ -1866,7 +1902,13 @@
               </div>
             </article>
             <article class="services-article">
-              <img class="icon" src="./media/house_icon.png" alt="house icon" />
+              <amp-img
+                class="icon"
+                width="48"
+                height="32"
+                src="./media/house_icon.png"
+                alt="house icon"
+              ></amp-img>
               <div class="text-wrapper">
                 <h3 class="services-article-header">CSS/HTML</h3>
                 <p class="services-article-text">
@@ -1876,7 +1918,13 @@
               </div>
             </article>
             <article class="services-article">
-              <img class="icon" src="./media/frame_icon.png" alt="frame icon" />
+              <amp-img
+                class="icon"
+                width="48"
+                height="32"
+                src="./media/frame_icon.png"
+                alt="frame icon"
+              ></amp-img>
               <div class="text-wrapper">
                 <h3 class="services-article-header">DIGITAL</h3>
                 <p class="services-article-text">
@@ -1912,18 +1960,14 @@
           class="ipad-image-markup-block margin-auto al-items-end"
           id="ipad-image-markup-block"
         >
-          <img
+          <amp-img
+            width="356"
+            height="480"
             src="./media/ipad-design-min.png"
             alt="Ipad Page Design"
             id="ipad-design-image"
             class=""
-          />
-          <img
-            src="./media/iphone-design-min.png"
-            alt="Iphone Page Design"
-            id="iphone-design-image"
-            class=""
-          />
+          ></amp-img>
         </div>
       </article>
     </div>
@@ -1949,29 +1993,33 @@
           id="what-we-do-hat"
         ></div>
         <div class="info-block flex-container">
-          <img
+          <amp-img
+            width="412"
+            height="196"
             src="./media/photography-min.png"
             alt="Guy holding pictures"
             class="info-block-side-image"
-          />
+          ></amp-img>
           <div class="slides-container">
             <div class="slide-text-block">
               <div
                 class="slide-header-block flex-container al-items-center jf-start"
               >
-                <img
+                <amp-img
                   class="slide-header-image"
                   src="./media/photo-frame-icon.png"
                   height="32"
                   width="32"
                   alt="photo frame icon"
-                />
+                ></amp-img>
                 <h3 class="slide-header-text">PHOTOGRAPHY</h3>
-                <img
+                <amp-img
+                  width="16"
+                  height="16"
                   class="slide-arrow arrow-up"
                   src="./media/arrow-up.png"
                   alt="arrow icon"
-                />
+                ></amp-img>
               </div>
               <div class="slide-text-inside-block">
                 <div class="text-wrapper-inside-block">
@@ -1996,19 +2044,21 @@
               <div
                 class="slide-header-block flex-container al-items-center jf-start"
               >
-                <img
+                <amp-img
                   class="slide-header-image"
                   src="./media/controls-icon.png"
                   height="32"
                   width="32"
                   alt="slide header image"
-                />
+                ></amp-img>
                 <h3 class="slide-header-text">CREATIVITY</h3>
-                <img
+                <amp-img
                   class="slide-arrow arrow-down"
+                  width="16"
+                  height="16"
                   src="./media/arrow-up.png"
                   alt="arrow icon"
-                />
+                ></amp-img>
               </div>
               <div class="slide-text-inside-block" style="display: none">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -2023,19 +2073,21 @@
               <div
                 class="slide-header-block flex-container al-items-center jf-start"
               >
-                <img
+                <amp-img
                   class="slide-header-image"
                   src="./media/bullseye-icon.png"
                   height="32"
                   width="32"
                   alt="slide header image"
-                />
+                ></amp-img>
                 <h3 class="slide-header-text">WEB DESIGN</h3>
-                <img
+                <amp-img
                   class="slide-arrow arrow-down"
+                  width="16"
+                  height="16"
                   src="./media/arrow-up.png"
                   alt="arrow icon"
-                />
+                ></amp-img>
               </div>
               <div class="slide-text-inside-block" style="display: none">
                 <p>
@@ -2065,15 +2117,22 @@
         id="quotes-container-1"
       >
         <div class="left-arrow quote-arrow">
-          <img src="./media/arrow-left.png" alt="" />
+          <amp-img
+            width="16"
+            height="16"
+            src="./media/arrow-left.png"
+            alt=""
+          ></amp-img>
         </div>
         <div class="quote-block">
-          <img
+          <amp-img
+            width="64"
+            height="64"
             id="speech-bubbles-pic"
             src="./media/speech-bubbles-icon.png"
             alt="speech bubbles icon"
             class="quote-image"
-          />
+          ></amp-img>
           <div class="quote-main-block">
             <p class="quote-text">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
@@ -2090,7 +2149,12 @@
           </div>
         </div>
         <div class="right-arrow quote-arrow">
-          <img src="./media/arrow-right.png" alt="arrow right" />
+          <amp-img
+            width="16"
+            height="16"
+            src="./media/arrow-right.png"
+            alt="arrow right"
+          ></amp-img>
         </div>
       </div>
     </section>
@@ -2114,30 +2178,36 @@
         </div>
         <div class="photos-container" id="meet-our-team-photo-container">
           <div class="photo-container">
-            <img
+            <amp-img
               src="./media/photographer-1-min.png"
               alt="bearded guy in glasses looking far away"
-            />
+              width="200"
+              height="306"
+            ></amp-img>
             <div class="photo-subtitle">
               <p>MATTHEW DIX</p>
               <p class="undertext">Graphic Design</p>
             </div>
           </div>
           <div class="photo-container">
-            <img
+            <amp-img
               src="./media/photographer-2-min.png"
               alt="guy holding a camera"
-            />
+              width="200"
+              height="306"
+            ></amp-img>
             <div class="photo-subtitle">
               <p>CHRISTOPHER CAMPBELL</p>
               <p class="undertext">Branding/UX design</p>
             </div>
           </div>
           <div id="third-photo" class="photo-container">
-            <img
+            <amp-img
               src="./media/photographer-3-min.png"
               alt="bearded guy looking into a distance"
-            />
+              width="200"
+              height="306"
+            ></amp-img>
             <div class="photo-subtitle">
               <p>MICHAEL FERTIG</p>
               <p class="undertext">Developer</p>
@@ -2152,36 +2222,48 @@
     >
       <div class="main-block">
         <div class="icon-grid">
-          <img
+          <amp-img
             src="./media/partner_1.png"
             alt="Hipster Barbershop Logo"
+            width="128"
+            height="128"
             class="partner_icon"
-          />
-          <img
+          ></amp-img>
+          <amp-img
             src="./media/partner_2.png"
             alt="A B C D Logo"
             class="partner_icon"
-          />
-          <img
+            width="128"
+            height="128"
+          ></amp-img>
+          <amp-img
             src="./media/partner_3.png"
             alt="Design Quality Logo"
             class="partner_icon"
-          />
-          <img
+            width="128"
+            height="128"
+          ></amp-img>
+          <amp-img
             src="./media/partner_4.png"
             alt="Hipster Barbershop Logo"
             class="partner_icon"
-          />
-          <img
+            width="128"
+            height="128"
+          ></amp-img>
+          <amp-img
             src="./media/partner_5.png"
             alt="Hipster Barbershop Logo"
             class="partner_icon"
-          />
-          <img
+            width="128"
+            height="128"
+          ></amp-img>
+          <amp-img
             src="./media/partner_6.png"
             alt="Studio Designer Logo"
             class="partner_icon"
-          />
+            width="128"
+            height="128"
+          ></amp-img>
         </div>
       </div>
     </section>
@@ -2206,40 +2288,58 @@
       </div>
       <div class="photos-wrapper">
         <div class="photos-grid-4" id="our-work-photo-block">
-          <img
+          <amp-img
             src="./media/photo-1-min.png"
             alt="guy standing on a beach"
             class="grid-photo"
-          />
-          <img
+            width="390"
+            height="390"
+          ></amp-img>
+          <amp-img
             src="./media/photo-2-min.png"
             alt="a bridge"
             class="grid-photo"
-          />
+            width="390"
+            height="390"
+          ></amp-img>
 
-          <img
+          <amp-img
             src="./media/tall-photo-3-min.png"
             alt="jellyfish"
             class="grid-photo"
             id="grid-tall-photo-3"
-          />
-          <img src="./media/photo-4-min.png" alt="" class="grid-photo" />
-          <img
+            width="390"
+            height="780"
+          ></amp-img>
+          <amp-img
+            src="./media/photo-4-min.png"
+            alt=""
+            class="grid-photo"
+            width="390"
+            height="390"
+          ></amp-img>
+          <amp-img
             src="./media/photo-5-min.png"
             alt="clouded bridge"
             class="grid-photo"
-          />
-          <img
+            width="390"
+            height="390"
+          ></amp-img>
+          <amp-img
             src="./media/photo-6-min.png"
             alt="round building"
             class="grid-photo"
-          />
-          <img
+            width="390"
+            height="390"
+          ></amp-img>
+          <amp-img
             src="./media/photo-8-min.png"
             alt="skyscraper"
             class="grid-photo"
             style="grid-row-start: 2; grid-row-end: 2; grid-column: 4"
-          />
+            width="390"
+            height="390"
+          ></amp-img>
         </div>
       </div>
     </section>
@@ -2252,15 +2352,22 @@
         id="quotes-container-2"
       >
         <div class="left-arrow quote-arrow">
-          <img src="./media/arrow-left.png" alt="arrow left" />
+          <amp-img
+            src="./media/arrow-left.png"
+            alt="arrow left"
+            width="16"
+            height="16"
+          ></amp-img>
         </div>
         <div class="quote-block">
-          <img
+          <amp-img
             id="quote-round-photo"
             src="./media/quote-photo.png"
             alt="quote image"
             class="quote-image"
-          />
+            width="256"
+            height="128"
+          ></amp-img>
           <div class="quote-main-block">
             <p class="quote-text">
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
@@ -2277,7 +2384,12 @@
           </div>
         </div>
         <div class="right-arrow quote-arrow">
-          <img src="./media/arrow-right.png" alt="arrow right" />
+          <amp-img
+            src="./media/arrow-right.png"
+            alt="arrow right"
+            width="16"
+            height="16"
+          ></amp-img>
         </div>
       </div>
     </div>
@@ -2301,11 +2413,13 @@
         <div class="grid-reviews-2">
           <div class="client-review">
             <div class="left-part">
-              <img
+              <amp-img
                 src="./media/Matthew_photo.png"
                 alt="Matthew photo"
                 class="reviewer-photo"
-              />
+                width="128"
+                height="128"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header class="review-header">
@@ -2324,11 +2438,13 @@
           </div>
           <div class="client-review">
             <div class="left-part">
-              <img
+              <amp-img
                 src="./media/Nick_photo.png"
                 alt="Nick photo"
                 class="reviewer-photo"
-              />
+                width="128"
+                height="128"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header class="review-header">
@@ -2347,11 +2463,13 @@
           </div>
           <div class="client-review">
             <div class="left-part">
-              <img
+              <amp-img
                 src="./media/Jaelynn_photo.png"
                 alt="Jaelynn photo"
                 class="reviewer-photo"
-              />
+                width="128"
+                height="128"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header class="review-header">
@@ -2370,11 +2488,13 @@
           </div>
           <div class="client-review">
             <div class="left-part">
-              <img
+              <amp-img
                 src="./media/Mike_photo.jpg.png"
                 alt="Mike photo"
                 class="reviewer-photo"
-              />
+                width="128"
+                height="128"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header class="review-header">
@@ -2407,11 +2527,13 @@
           <article class="blog-article">
             <header class="blog-header">
               <div class="image-wrapper">
-                <img
+                <amp-img
                   src="./media/blog_pic_1.png"
                   alt="table with phone, headphones and a book"
                   class="blog-article-image"
-                />
+                  width="256"
+                  height="168"
+                ></amp-img>
                 <div class="blog-date">
                   <p class="date-num">15</p>
                   <p class="date-month">Jan</p>
@@ -2426,13 +2548,21 @@
             </p>
             <footer class="blog-footer">
               <span class="post-views">
-                <img src="./media/eye_icon.png" alt="eye icon" /><span
-                  class="count"
-                  >542</span
-                ></span
+                <amp-img
+                  src="./media/eye_icon.png"
+                  alt="eye icon"
+                  width="16"
+                  height="16"
+                ></amp-img
+                ><span class="count">542</span></span
               >
               <span class="post-comments"
-                ><img src="./media/message_icon.png" alt="message icon" />
+                ><amp-img
+                  src="./media/message_icon.png"
+                  alt="message icon"
+                  width="16"
+                  height="16"
+                ></amp-img>
                 <span class="count">17</span>
               </span>
             </footer>
@@ -2440,11 +2570,13 @@
           <article class="blog-article">
             <header class="blog-header">
               <div class="image-wrapper">
-                <img
+                <amp-img
                   src="./media/blog_pic_2.png"
                   alt="blog picture"
                   class="blog-article-image"
-                />
+                  width="256"
+                  height="168"
+                ></amp-img>
                 <div class="blog-date">
                   <p class="date-num">14</p>
                   <p class="date-month">Jan</p>
@@ -2459,13 +2591,21 @@
             </p>
             <footer class="blog-footer">
               <span class="post-views">
-                <img src="./media/eye_icon.png" alt="eye icon" /><span
-                  class="count"
-                  >992</span
-                ></span
+                <amp-img
+                  src="./media/eye_icon.png"
+                  width="16"
+                  height="16"
+                  alt="eye icon"
+                ></amp-img
+                ><span class="count">992</span></span
               >
               <span class="post-comments"
-                ><img src="./media/message_icon.png" alt="message icon" />
+                ><amp-img
+                  src="./media/message_icon.png"
+                  width="16"
+                  height="16"
+                  alt="message icon"
+                ></amp-img>
                 <span class="count">42</span>
               </span>
             </footer>
@@ -2473,11 +2613,13 @@
           <article class="blog-article">
             <header class="blog-header">
               <div class="image-wrapper">
-                <img
+                <amp-img
                   src="./media/blog_pic_3.png"
                   alt="guy sitting on a couch with a tablet"
                   class="blog-article-image"
-                />
+                  width="256"
+                  height="168"
+                ></amp-img>
                 <div class="blog-date">
                   <p class="date-num">12</p>
                   <p class="date-month">Jan</p>
@@ -2492,13 +2634,21 @@
             </p>
             <footer class="blog-footer">
               <span class="post-views">
-                <img src="./media/eye_icon.png" alt="eye icon" /><span
-                  class="count"
-                  >1560</span
-                ></span
+                <amp-img
+                  src="./media/eye_icon.png"
+                  width="16"
+                  height="16"
+                  alt="eye icon"
+                ></amp-img
+                ><span class="count">1560</span></span
               >
               <span class="post-comments"
-                ><img src="./media/message_icon.png" alt="message icon" />
+                ><amp-img
+                  src="./media/message_icon.png"
+                  width="16"
+                  height="16"
+                  alt="message icon"
+                ></amp-img>
                 <span class="count">98</span>
               </span>
             </footer>
@@ -2518,13 +2668,14 @@
       <div class="main-block">
         <div class="text-block" id="open-map">
           <div class="title-block">
-            <img
+            <amp-img
               src="./media/pin_icon.png"
               alt="pin icon"
               id="pin_icon"
+              width="16"
+              height="16"
               class=""
-              height="26"
-            />
+            ></amp-img>
             <h3 class="fs-26 fw-700 text-red">OPEN MAP</h3>
             <div class="underscore-header bg-pink margin-auto"></div>
           </div>
@@ -2550,46 +2701,62 @@
             <div class="follow-us-block">
               <span class="cursive-grey-text">Follow Us: </span>
               <div class="icon-container">
-                <img
+                <amp-img
                   src="./media/facebook_icon.png"
                   alt="facebook_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/twitter_icon.png"
                   alt="twitter_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/instagram_icon.png"
                   alt="instagram_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/pinterest_icon.png"
                   alt="pinterest_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/google_plus_icon.png"
                   alt="google_plus_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/youtube_icon.png"
                   alt="youtube_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/dribbble_icon.png"
                   alt="dribbble_icon"
                   class="small-icon"
-                />
-                <img
+                  width="16"
+                  height="16"
+                ></amp-img>
+                <amp-img
                   src="./media/tumblr_icon.png"
                   alt="tumblr_icon"
                   class="small-icon"
-                />
+                  width="16"
+                  height="16"
+                ></amp-img>
               </div>
             </div>
             <div class="email-sub">
@@ -2607,11 +2774,12 @@
           </header>
           <article class="micro-blog">
             <div class="left-part">
-              <img
+              <amp-img
                 src="./media/blogs_pic_1.png"
                 alt="lights picture"
-                width="120"
-              />
+                width="110"
+                height="76"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header>Lorem ipsum dolor sit amet consectetur.</header>
@@ -2620,7 +2788,12 @@
           </article>
           <article class="micro-blog">
             <div class="left-part">
-              <img src="./media/blogs_pic_2.png" alt="stars" width="120" />
+              <amp-img
+                src="./media/blogs_pic_2.png"
+                alt="stars"
+                width="110"
+                height="76"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header>Lorem ipsum dolor sit amet consectetur.</header>
@@ -2629,11 +2802,12 @@
           </article>
           <article class="micro-blog">
             <div class="left-part">
-              <img
+              <amp-img
                 src="./media/blogs_pic_3.png"
                 alt="person holding a guitar"
-                width="120"
-              />
+                width="110"
+                height="76"
+              ></amp-img>
             </div>
             <div class="right-part">
               <header>Lorem ipsum dolor sit amet consectetur.</header>
@@ -2644,51 +2818,69 @@
         <div class="instagram-block" id="small-instagram-block">
           <header>INSTAGRAM</header>
           <div class="grid-3">
-            <img
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_1.png"
               alt="clouded mountains"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_2.png"
               alt="pair in green mountains"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_3.png"
               alt="night traffic"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_4.png"
               alt="night sky"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_5.png"
               alt="wood"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_6.png"
               alt="mountains"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_7.png"
               alt="a tunnel"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_8.png"
               alt="a pine cone"
-            />
-            <img
+            ></amp-img>
+            <amp-img
+              width="64"
+              height="64"
               class="small-instagram-photo"
               src="./media/instagram_9.png"
               alt="a shore"
-            />
+            ></amp-img>
           </div>
           <p class="cursive-grey-text">View more photos</p>
         </div>
